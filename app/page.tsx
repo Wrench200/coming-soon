@@ -5,7 +5,7 @@ import { Toaster, toast } from 'react-hot-toast';
 
 export default function Home() {
   // Countdown target: July 8, 2025, 00:00:00
-  const targetDate = new Date("2025-08-07T00:00:00").getTime();
+  const targetDate = new Date("2025-08-03T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -71,7 +71,19 @@ export default function Home() {
           <div className="flex items-center">
             <Image src="/logo.png" alt="Jara" width={110} height={110} />
           </div>
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8 items-center">
+            {/* ...other nav links if any... */}
+            <a
+              href="https://chat.whatsapp.com/YOUR_COMMUNITY_LINK"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium transition-all duration-200"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 13.487a4.548 4.548 0 0 1-2.01-.547c-.31-.16-.654-.34-1.02-.54-.366-.2-.654-.36-.89-.5a6.13 6.13 0 0 1-1.13-.82c-.31-.3-.57-.62-.78-.95-.21-.33-.37-.68-.48-1.04-.11-.36-.17-.74-.17-1.13 0-.39.07-.77.2-1.13.13-.36.32-.7.56-.99.24-.29.53-.54.86-.74.33-.2.7-.36 1.09-.47.39-.11.8-.17 1.22-.17.42 0 .83.06 1.22.17.39.11.76.27 1.09.47.33.2.62.45.86.74.24.29.43.63.56.99.13.36.2.74.2 1.13 0 .39-.06.77-.17 1.13-.11.36-.27.71-.48 1.04-.21.33-.47.65-.78.95-.31.3-.67.58-1.13.82-.24.14-.52.3-.89.5-.37.2-.71.38-1.02.54a4.548 4.548 0 0 1-2.01.547z" />
+              </svg>
+              Join our WhatsApp Community
+            </a>
           </nav>
           <div className="md:hidden">
            
@@ -137,9 +149,20 @@ export default function Home() {
                     {loading ? "Submitting..." : "Notify Me"}
                   </button>
                 </form>
-                <p className="text-xs text-indigo-300 mt-3">
+                <p className="text-xs text-center text-indigo-300 mt-3">
                   We respect your privacy. No spam, ever. Unsubscribe anytime.
                 </p>
+                <a
+                  href="https://chat.whatsapp.com/YOUR_COMMUNITY_LINK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium transition-all duration-200"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 13.487a4.548 4.548 0 0 1-2.01-.547c-.31-.16-.654-.34-1.02-.54-.366-.2-.654-.36-.89-.5a6.13 6.13 0 0 1-1.13-.82c-.31-.3-.57-.62-.78-.95-.21-.33-.37-.68-.48-1.04-.11-.36-.17-.74-.17-1.13 0-.39.07-.77.2-1.13.13-.36.32-.7.56-.99.24-.29.53-.54.86-.74.33-.2.7-.36 1.09-.47.39-.11.8-.17 1.22-.17.42 0 .83.06 1.22.17.39.11.76.27 1.09.47.33.2.62.45.86.74.24.29.43.63.56.99.13.36.2.74.2 1.13 0 .39-.06.77-.17 1.13-.11.36-.27.71-.48 1.04-.21.33-.47.65-.78.95-.31.3-.67.58-1.13.82-.24.14-.52.3-.89.5-.37.2-.71.38-1.02.54a4.548 4.548 0 0 1-2.01.547z" />
+                  </svg>
+                  Join our WhatsApp Community for more updates
+                </a>
               </div>
 
 

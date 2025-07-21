@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabaseClient';
 import { Resend } from 'resend';
-
+import { EmailTemplate } from '@/app/email-template';
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
@@ -47,7 +47,7 @@ export async function POST(req: NextRequest) {
         from: EMAIL_FROM,
         to: email,
         subject: 'You are on the waiting list! 🎉',
-        html: `<h2>Thank you for joining the waiting list!</h2><p>We have received your email and you are now on the list. We will notify you as soon as we launch!</p><p>Best regards,<br/>The Team</p>`
+        react: EmailTemplate(),
       });
       console.log('Response:', response);
       console.log('Confirmation email sent successfully');
