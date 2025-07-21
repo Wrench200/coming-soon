@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marck+Script&display=swap');
 @import "tailwindcss";
 :root {
   --background: #ffffff;
@@ -29,7 +29,7 @@ body {
 
 
 .cabin{
-  font-family: "Cabin Sketch", sans-serif;
+   font-family: "Marck Script", cursive;
   font-weight: 400;
   font-style: normal;
 }
