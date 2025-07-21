@@ -74,7 +74,7 @@ export default function Home() {
           <nav className="hidden md:flex space-x-8 items-center">
             {/* ...other nav links if any... */}
             <a
-              href="https://chat.whatsapp.com/YOUR_COMMUNITY_LINK"
+              href="https://chat.whatsapp.com/Gs2phaYg2BU75cIEBVs4xs"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium transition-all duration-200"
@@ -153,7 +153,7 @@ export default function Home() {
                   We respect your privacy. No spam, ever. Unsubscribe anytime.
                 </p>
                 <a
-                  href="https://chat.whatsapp.com/YOUR_COMMUNITY_LINK"
+                  href="https://chat.whatsapp.com/Gs2phaYg2BU75cIEBVs4xs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium transition-all duration-200"
