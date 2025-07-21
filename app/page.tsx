@@ -93,7 +93,7 @@ export default function Home() {
           <div className="flex justify-center gap-12 items-center">
             <div className="text-center md:text-left flex flex-col items-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 leading-tight md:w-3/4 text-center">
-                Something <span className="text-transparent bg-clip-text bg-[#FBA812] kaushan text-7xl">Amazing</span> is Coming Soon
+                Something <span className="text-transparent bg-clip-text bg-[#FBA812] cabin text-6xl">Amazing</span> is Coming Soon
               </h1>
               <p className="text-lg md:text-xl text-white mb-8 max-w-lg text-center mx-auto md:mx-0">
                 We're working hard to bring you our new platform. Sign up to be the first to know when we launch and get exclusive early access.
