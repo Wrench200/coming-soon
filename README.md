@@ -58,3 +58,20 @@ EMAIL_FROM=your_verified_sender@email.com
 ```
 
 3. Users will receive a confirmation email when they join the waiting list.
+
+## Live Active Users Table Setup
+
+To enable live tracking of users on the site, create a new table in your Supabase project:
+
+```sql
+create table active_users (
+  id uuid primary key default gen_random_uuid(),
+  session_id text unique not null,
+  joined_at timestamp with time zone default timezone('utc'::text, now())
+);
+```
+
+- `session_id`: A unique identifier for each browser session.
+- `joined_at`: Timestamp when the user joined.
+
+Enable Realtime on this table in the Supabase dashboard for best results.
