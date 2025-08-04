@@ -5,7 +5,7 @@ import { Toaster, toast } from 'react-hot-toast';
 
 export default function Home() {
   // Countdown target: July 8, 2025, 00:00:00
-  const targetDate = new Date("2025-08-04T12:00:00").getTime();
+  const targetDate = new Date("2025-08-04T21:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
